@@ -1,0 +1,267 @@
+/* 
+    colors
+
+Optimism Blue: #269ccc - Secondary Color
+
+Blue Algae: #9ed2c5 - Button Color
+
+Flat Grey: #7b7b7b - Footer bar color
+
+White: #fff - Everything Else
+
+
+*/
+
+/* Global */
+
+:root {
+  --main-blue-color: #269ccc;
+  --algae-blue-color: #9ed2c5;
+  --gray--color: #7b7b7b;
+  --white: #fff;
+  --black: #000;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+i {
+    color: var(--main-blue-color);
+}
+
+.btn-color {
+    background: var(--main-blue-color);
+    color: white;
+}
+
+/* Navigation Bar */
+
+.navbar-brand {
+    color: var(--main-blue-color);
+    font-size: 28px !important;
+    font-family: 'Lobster', ;
+}
+
+.home-logo  {
+    font-weight: 400;
+}
+
+.navbar {
+    z-index: 2;
+}
+
+.navbar .nav-link {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    color: var(--black);
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.navbar .nav-item.active {
+ /* border-left: #fff 3px solid;    */
+
+ border-left: 3px solid var(--main-blue-color);
+}
+
+/* Showcase */
+
+#showcase {
+    background: linear-gradient(rgba(20,20,20, .7), rgba(20,20,20, .7)), url(../img/web-design-showcase.jpg) no-repeat center center/cover;
+    height: 80vh;
+    width: 100%;
+}
+
+.showcase-content {
+    position: absolute;
+top: 50%; bottom: 0; left: 30px; right: 30px;
+transform: translateY(-50%);
+text-align: center;
+}
+
+#home-heading {
+    position: relative;
+    min-height: 200px;
+    background: linear-gradient(rgba(20,20,20, .7), rgba(20,20,20, .7)), url(../img/seo-guide.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5)
+}
+
+/* The Process */
+
+.bg-process {
+    background: var(--main-blue-color);
+}
+
+#video-play {
+    position: relative;
+    min-height: 200px;
+    background: url('../img/media.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 -300px;
+    text-align: center;
+    color: white;
+}
+
+#video-play a {
+    color: #fff;
+}
+
+#page-header {
+    height: 200px;
+    background: url(../img/image1.jpg);
+    /* background-position: 0 -360px;
+    background-attachment: fixed; */
+    color: #fff;
+    border-bottom: 1px #eee solid;
+    padding-top: 50px;
+}
+
+
+#about-page-header {
+    height: 200px;
+    background: linear-gradient(rgba(20,20,20, .7), rgba(20,20,20, .7)), url(../img/about-header.jpg) no-repeat center center/cover;
+    /* background-position: 0 -360px; */
+    /* background-attachment: fixed; */
+    color: #fff;
+    border-bottom: 1px #eee solid;
+    padding-top: 50px;
+}
+
+#services-page-header {
+    height: 200px;
+    background: linear-gradient(rgba(20,20,20, .7), rgba(20,20,20, .7)), url(../img/services-header.jpg) no-repeat center center/cover;
+    /* background-position: 0 -360px;
+    background-attachment: fixed; */
+    color: #fff;
+    border-bottom: 1px #eee solid;
+    padding-top: 50px;
+}
+
+#contact-page-header {
+    height: 200px;
+    background: linear-gradient(rgba(20,20,20, .7), rgba(20,20,20, .7)), url(../img/contact-header.jpg) no-repeat center center/cover;
+    /* background-position: 0 -360px;
+    background-attachment: fixed; */
+    color: #fff;
+    border-bottom: 1px #eee solid;
+    padding-top: 50px;
+}
+
+.about-img {
+    margin-top: -50px;
+}
+
+#faq .card {
+    border: #444;
+}
+
+#faq a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#faq card-body,
+#faq .card-header {
+    background: #333;
+    color: #333;
+   
+}
+
+.card-body p {
+    color: black;
+}
+
+#main-footer {
+    background: black;
+    color: white;
+}
+
+.test-icon {
+    padding-left: 1rem;
+}
+
+span i {
+    font-size: 32px;
+    color: var(--gray--color);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 767px) {
+    .big-logo {
+        display: none;
+    }
+
+    #info .mobile-small {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+      #info .mobile-small h1 {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+      #info .mobile-small p {
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    #about-page-header p {
+        display: none;
+    }
+
+    .about-btn {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .center-img {
+        text-align: center;
+    }
+
+    .about-img {
+        margin-top: 1.5rem;
+        width: 250px;
+    }
+
+    .service-card {
+        padding-bottom: 1rem;
+    }
+
+    #services-page-header p {
+        display: none;
+    }
+
+}
+
+    @media only screen and (max-width: 1024px) {
+         #services-page-header p {
+            display: none;
+         }
+
+         #icon-boxes h3 {
+             font-size: 21px;
+         }
+    
+    }
+
+   
